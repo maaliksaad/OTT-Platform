@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import QueryProvider from "@/components/providers/QueryProvider";
+import { ServerWarningModal } from "@/components/ui/server-warning-modal";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
               linkedin: "https://linkedin.com"
             }}
           />
+          <ServerWarningModal />
         </QueryProvider>
       </body>
     </html>
